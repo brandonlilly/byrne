@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "portfolio site",
   "repository": {
-   "type": "git",
-   "url": "https://github.com/brandonlilly/byrne"
+    "type": "git",
+    "url": "https://github.com/brandonlilly/byrne"
   },
   "main": "app/index.js",
   "scripts": {
@@ -25,5 +25,8 @@
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.12"
+  },
+  "dependencies": {
+    "three": "^0.73.2"
   }
 }
