@@ -11,7 +11,7 @@ import {
 
 import TweenLite from 'gsap/src/minified/TweenLite.min.js';
 
-export function createLineSystem(scene){
+export function createLineSystem(){
   const distance = 600;
   const geometry = new Geometry();
   const amount = 60;
