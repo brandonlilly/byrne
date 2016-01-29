@@ -4,8 +4,19 @@ import THREE, {
 }
 from 'three';
 
+function createCamera(Camera, { viewAngle, aspectRatio, near, far }){
+  return new Camera(viewAngle, aspectRatio, near, far);
+}
+
 const scene = new Scene();
-const camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
+
+const camera = createCamera(PerspectiveCamera, {
+  viewAngle: 75,
+  aspectRatio: window.innerWidth / window.innerHeight,
+  near: 1,
+  far: 10000,
+  less: "how are you doing?"
+});
 camera.position.z = 1000;
 
 const geometry = new BoxGeometry(200, 200, 200);
