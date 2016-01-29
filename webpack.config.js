@@ -31,7 +31,12 @@ var config = {
   },
   sassLoader: {
     includePaths: [path.join(__dirname, "style")]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': { NODE_ENV: '"development"' }
+    })
+  ]
 };
 
 module.exports = config;
