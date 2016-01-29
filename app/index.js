@@ -14,8 +14,7 @@ const camera = createCamera(PerspectiveCamera, {
   viewAngle: 75,
   aspectRatio: window.innerWidth / window.innerHeight,
   near: 1,
-  far: 10000,
-  less: "how are you doing?"
+  far: 10000
 });
 camera.position.z = 1000;
 
