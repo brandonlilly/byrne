@@ -39,14 +39,14 @@ export function createLineSystem(){
   TweenLite.to(
     material,
     2.6,
-    { opacity: 1, ease: easeIn }
+    { opacity: 0.05, ease: easeIn }
   );
 
   const particles = new Points(geometry, material);
 
   const materialLine = new LineBasicMaterial({
     color: 0xFFFFFF,
-    opacity: 0.6,
+    opacity: 0.06,
     transparent: true
   });
 
