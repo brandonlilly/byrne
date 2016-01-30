@@ -1,0 +1,125 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-size: 100%; */
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* custom reset styles start here */
+/* Remove yellow outline from submits in chrome */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none; }
+
+/* Remove dotted outline from submits in IE9 */
+input[type="submit"]:focus {
+  outline: none; }
+
+/* Remove dotted outline from submits in firefox */
+#login input[type="submit"]::-moz-focus-inner {
+  border: 0; }
+
+html {
+  height: 100%;
+  background: #2B2F3C; }
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #2B2F3C; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizelegibility; }
+
+.content {
+  z-index: 1000;
+  position: relative;
+  height: 100%; }
+
+#face {
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-80%);
+  color: white;
+  text-align: center;
+  letter-spacing: 0.04rem; }
+  #face h1, #face h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: lighter; }
+  #face h1 {
+    font-size: 36px;
+    margin: 10px; }
+  #face h2 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 20px; }
+
+nav {
+  color: white;
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  letter-spacing: 0.04rem;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%); }
+  nav ul {
+    list-style: none;
+    text-decoration: none; }
+  nav li {
+    margin: 10px;
+    padding: 15px 1px;
+    float: left;
+    cursor: pointer; }
+    nav li:hover {
+      border-bottom: 1px solid #999; }
+
+canvas {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0; }
