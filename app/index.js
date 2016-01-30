@@ -19,8 +19,6 @@ const { particles:points, streaks } = createStreaksSystem();
 //   streak => scene.add(streak)
 // );
 
-// scene.fog = new Fog(0xFFFFFF, 0.0005)
-
 const renderer = new WebGLRenderer({
   antialiasing: true,
   precision: "highp",
@@ -30,33 +28,33 @@ const renderer = new WebGLRenderer({
 });
 const container = document.createElement("div");
 
-renderer.setSize(window.innerWidth, window.innerHeight);
+window.addEventListener('resize', resizeRenderer, true);
+resizeRenderer();
+
 document.body.appendChild(container);
 container.appendChild(renderer.domElement);
 
 animate();
 
-let startTime = new Date();
-
 function animate() {
   requestAnimationFrame(animate);
-
-  let elapsed = (new Date() - startTime) / 1000;
 
   particles.rotation.y += 0.0008;
   line.rotation.y += 0.0008;
 
-  if (elapsed > 0) {
-    const vel = 0.5;
-    streaks.forEach(
-      streak => {
-        streak.geometry.vertices[0].y -= vel;
-        streak.geometry.vertices[1].y -= vel / 2.0;
-        streak.geometry.verticesNeedUpdate = true;
-      }
-    )
-    points.translateY(-vel);
-  }
+  const vel = 0.5;
+  streaks.forEach(
+    streak => {
+      streak.geometry.vertices[0].y -= vel;
+      streak.geometry.vertices[1].y -= vel / 2.0;
+      streak.geometry.verticesNeedUpdate = true;
+    }
+  )
+  points.translateY(-vel);
 
   renderer.render(scene, camera);
+}
+
+function resizeRenderer() {
+  renderer.setSize(window.innerWidth, window.innerHeight)
 }
