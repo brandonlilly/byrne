@@ -57,6 +57,49 @@ input[type="submit"]:focus {
 #login input[type="submit"]::-moz-focus-inner {
   border: 0; }
 
+@font-face {
+  font-family: "byrne-icon";
+  src: url(/92f5ad39db12bc2423236ecf850c2ca9.eot);
+  src: url(/92f5ad39db12bc2423236ecf850c2ca9.eot?#iefix) format("embedded-opentype"), url(data:application/font-woff;base64,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) format("woff"), url(/c622fe6432401dfed6a8584bc71a2aa2.ttf) format("truetype"), url(/a3389caae07eb86426a9743ffcab7f5b.svg#byrne-icon) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "byrne-icon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "byrne-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-github:before {
+  content: "a"; }
+
+.icon-email:before {
+  content: "b"; }
+
+.icon-twitter:before {
+  content: "c"; }
+
+.icon-linkedin:before {
+  content: "d"; }
+
 html {
   height: 100%;
   background: #2B2F3C; }
@@ -93,6 +136,18 @@ h1, h2, h3, h4, h5, h6 {
   #face h2 {
     color: rgba(255, 255, 255, 0.4);
     font-size: 20px; }
+
+#media {
+  position: absolute;
+  bottom: 15px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%); }
+  #media a {
+    text-decoration: none;
+    color: inherit; }
 
 nav {
   color: rgba(255, 255, 255, 0.8);
