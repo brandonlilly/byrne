@@ -148,6 +148,8 @@ h1, h2, h3, h4, h5, h6 {
   #media a {
     text-decoration: none;
     color: inherit; }
+    #media a:hover {
+      color: rgba(255, 255, 255, 0.7); }
 
 nav {
   color: rgba(255, 255, 255, 0.8);
@@ -168,6 +170,7 @@ nav {
     float: left;
     cursor: pointer; }
     nav li:hover {
+      color: white;
       border-bottom: 1px solid #999; }
 
 canvas {
