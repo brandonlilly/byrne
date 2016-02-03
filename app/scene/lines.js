@@ -9,7 +9,7 @@ import {
   Vector3
 } from 'three';
 import TweenLite from 'gsap/src/minified/TweenLite.min.js';
-import { randomize } from './utils';
+import { randomize } from '../utils';
 
 function randomVector(distance){
   return new Vector3(

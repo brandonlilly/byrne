@@ -9,7 +9,7 @@ import {
   Vector3
 } from 'three';
 import TweenLite from 'gsap/src/minified/TweenLite.min.js';
-import { randomize } from './utils';
+import { randomize } from '../utils';
 
 export function createStreaksSystem(){
   const distance = 600;

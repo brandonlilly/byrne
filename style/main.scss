@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  color: rgba(255, 255, 255, 0.8);
   font-family: 'Helvetica Neue', sans-serif;
   height: 100%;
   margin: 0;
@@ -21,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility;
 }
 
-.content {
+#app {
   z-index: 1000;
   position: relative;
   height: 100%;
@@ -59,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
+  letter-spacing: 5px;
 
   a {
     text-decoration: none;
@@ -70,30 +72,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
   font-weight: lighter;
   font-size: 18px;
   letter-spacing: $letter-spacing;
   position: absolute;
-  top: 70%;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  display: block;
 
-  ul {
-    list-style: none;
+  a {
     text-decoration: none;
-  }
-  li {
-    margin: 12px;
+    color: inherit;
     padding: 15px 1px;
-    float: left;
     cursor: pointer;
+    display: inline-block;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    &:last-child { margin-right: 0; }
 
     &:hover {
       color: white;
       border-bottom: 1px solid #999;
     }
+
+    &.active {
+      color: white;
+    }
+  }
+  ul {
+    white-space: nowrap;
+    list-style: none;
+    text-decoration: none;
   }
 }
 
