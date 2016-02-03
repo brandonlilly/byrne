@@ -8,8 +8,16 @@ import {
   TextureLoader,
   Vector3
 } from 'three';
-
 import TweenLite from 'gsap/src/minified/TweenLite.min.js';
+import { randomize } from './utils';
+
+function randomVector(distance){
+  return new Vector3(
+    randomize(-distance, distance),
+    randomize(-distance, distance),
+    randomize(-distance, distance)
+  );
+}
 
 export function createLineSystem(){
   const distance = 600;
@@ -28,11 +36,7 @@ export function createLineSystem(){
   });
 
   for (let step = 0; step < amount; step++) {
-    const vectorf = new Vector3(
-      (Math.random() * 2 - 1) * distance,
-      (Math.random() * 2 - 1) * distance,
-      (Math.random() * 2 - 1) * distance
-    )
+    const vectorf = randomVector(distance);
     geometry.vertices.push(vectorf);
   }
 

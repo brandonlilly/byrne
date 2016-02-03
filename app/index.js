@@ -4,7 +4,7 @@ import { createLineSystem } from './lines';
 import { createCamera } from './camera';
 import { createLog } from './log';
 
-console.log = createLog();
+// console.log = createLog();
 
 const scene = new Scene();
 const camera = createCamera();
@@ -36,8 +36,15 @@ container.appendChild(renderer.domElement);
 
 animate();
 
+let start = new Date();
+
+camera.position.y = 0;
+
 function animate() {
   requestAnimationFrame(animate);
+
+  let current = new Date();
+  let elapsed = current - start;
 
   particles.rotation.y += 0.0008;
   line.rotation.y += 0.0008;
@@ -51,6 +58,8 @@ function animate() {
     }
   )
   points.translateY(-vel);
+
+  camera.position.y += Math.cos(elapsed / 1100) / 12;
 
   renderer.render(scene, camera);
 }
