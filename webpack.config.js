@@ -7,12 +7,12 @@ var extractSASS = new ExtractTextPlugin('styles.css');
 var config = {
   devtool : 'eval-source-map',
 
-  entry: [
-    './app/index.js',
-    './style/main.scss',
-  ],
+  entry: {
+    bundle: ['./app/index.js', './style/main.scss'],
+    scene: ['./app/scene/scene.js'],
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.join(__dirname, 'dist/generated'),
     publicPath: '/',
   },
@@ -24,7 +24,7 @@ var config = {
     loaders: [
       {
         test: /\.js$/, loader: 'babel', exclude: /node_modules/,
-        query: { presets: ['es2015', 'stage-0'] }
+        query: { presets: ['es2015', 'react', 'stage-0'] }
       },
       {
         test: /\.scss$/,
