@@ -10,6 +10,10 @@
   <div id="app"></div>
   <div id="scene"></div>
   <script src="generated/bundle.js"></script>
-  <script src="generated/scene.js"></script>
+  <script>
+    if (screen && screen.width > 480) {
+      document.write('<script type="text/javascript" src="generated/scene.js"><\/script>');
+    }
+  </script>
 </body>
 </html>
