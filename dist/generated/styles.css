@@ -174,7 +174,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  margin-top: 30px; }
   #media a {
     text-decoration: none;
     color: inherit; }
@@ -211,6 +212,16 @@ nav {
     white-space: nowrap;
     list-style: none;
     text-decoration: none; }
+
+.noMatch {
+  text-align: center;
+  top: 42%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%); }
+  .noMatch h1 {
+    font-size: 72px;
+    font-weight: normal; }
 
 #scene canvas {
   background: transparent;

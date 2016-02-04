@@ -105,13 +105,6 @@ export const favorites = [
 
 export const next = [
   {
-    title: "Quantum Computing Since Democritus",
-    author: "Scott Aaronson",
-    year: 2013,
-    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/QuantumComputingSinceDemocritus.jpg",
-    url: "http://www.amazon.com/Quantum-Computing-since-Democritus-Aaronson/dp/0521199565",
-  },
-  {
     title: "1984",
     author: "George Orwell",
     year: 1949,
@@ -131,5 +124,12 @@ export const next = [
     year: 2010,
     image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/EmpireOfSummerMoon.jpg",
     url: "http://www.amazon.com/Empire-Summer-Moon-Comanches-Powerful/dp/1416591060",
+  },
+  {
+    title: "Quantum Computing Since Democritus",
+    author: "Scott Aaronson",
+    year: 2013,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/QuantumComputingSinceDemocritus.jpg",
+    url: "http://www.amazon.com/Quantum-Computing-since-Democritus-Aaronson/dp/0521199565",
   },
 ];
