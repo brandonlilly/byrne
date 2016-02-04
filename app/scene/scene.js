@@ -24,12 +24,12 @@ export function createScene() {
     preserveDrawingBuffer: true,
     alpha: true,
   });
-  const container = document.createElement("div");
+  const container = document.getElementById("scene");
 
   window.addEventListener('resize', resizeRenderer, true);
   resizeRenderer();
 
-  document.body.appendChild(container);
+  // document.body.appendChild(container);
   container.appendChild(renderer.domElement);
 
   animate();

@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'icons';
+@import 'reading';
 
 $blue: #4B8298;
 $letter-spacing: 2px;
@@ -7,12 +8,15 @@ $background-color: #2B2F3C;
 
 html {
   height: 100%;
-  background: #2B2F3C;
+  background: $background-color;
 }
 
 body {
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+
   height: 100%;
   margin: 0;
   background-color: $background-color;
@@ -20,6 +24,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility;
+  font-weight: lighter;
 }
 
 #app {
@@ -32,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   margin: 0 auto;
   left: 50%;
-  top: 45%;
+  top: 47%;
   transform: translateX(-50%) translateY(-80%);
   color: white;
   text-align: center;
@@ -53,13 +58,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #media {
-  position: absolute;
   bottom: 15px;
   font-size: 24px;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
   letter-spacing: 5px;
 
   a {
@@ -77,11 +79,9 @@ nav {
   font-weight: lighter;
   font-size: 18px;
   letter-spacing: $letter-spacing;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   display: block;
+  margin: 0 auto 20px auto;
+  padding-top: 20px;
 
   a {
     text-decoration: none;
@@ -95,11 +95,12 @@ nav {
     margin-right: 12px;
     &:last-child { margin-right: 0; }
 
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+
     &:hover {
       color: white;
       border-bottom: 1px solid #999;
     }
-
     &.active {
       color: white;
     }
@@ -111,7 +112,7 @@ nav {
   }
 }
 
-canvas {
+#scene canvas {
   background: transparent;
   margin: 0;
   padding: 0;
@@ -119,4 +120,10 @@ canvas {
   top: 0;
   left: 0;
   z-index: 0;
+}
+
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: "";
 }
