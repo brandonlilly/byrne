@@ -7,7 +7,6 @@ $letter-spacing: 2px;
 $background-color: #2B2F3C;
 
 html {
-  height: 100%;
   background: $background-color;
 }
 
@@ -30,7 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 #app {
   z-index: 1000;
   position: relative;
-  height: 100%;
+  min-height: 100vh;
+  padding-bottom: 50px;
 }
 
 #face {
@@ -58,12 +58,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #media {
-  bottom: 15px;
-  font-size: 24px;
+  bottom: 10px;
+  font-size: 26px;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   letter-spacing: 5px;
   margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
   a {
     text-decoration: none;
