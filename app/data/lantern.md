@@ -1,4 +1,4 @@
-I'm collaborating again with Michael Butler (again!) to make a successor to our
+I'm collaborating with Michael Butler (again!) to make a successor to our
 [Oreo Triggers](https://github.com/brandonlilly/oreo-triggers),
   now using ruby. There are a few key goals this time around:
 - Intuitive math expressions e.g. `x = 2 * (y + 3)` over Oreo's equivalent:
