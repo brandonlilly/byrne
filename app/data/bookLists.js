@@ -8,11 +8,11 @@ export const current = {
 
 export const recent = [
   {
-    title: "A Memory of Light",
-    author: "Robert Jordan, Brandon Sanderson",
-    year: 2013,
-    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/AMemoryOfLight.jpg",
-    url: "http://www.amazon.com/Memory-Light-Wheel-Time/dp/0765364883/",
+    title: "Lying",
+    author: "Sam Harris",
+    year: 2011,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/Lying.jpg",
+    url: "http://www.amazon.com/Lying-Sam-Harris/dp/1940051002/",
   },
   {
     title: "Practical Object-Oriented Design in Ruby",
@@ -20,6 +20,13 @@ export const recent = [
     year: 2012,
     image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/POODR.jpeg",
     url: "http://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330/",
+  },
+  {
+    title: "A Memory of Light",
+    author: "Robert Jordan, Brandon Sanderson",
+    year: 2013,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/AMemoryOfLight.jpg",
+    url: "http://www.amazon.com/Memory-Light-Wheel-Time/dp/0765364883/",
   },
   {
     title: "Words of Radiance",
@@ -105,18 +112,18 @@ export const favorites = [
 
 export const next = [
   {
-    title: "1984",
-    author: "George Orwell",
-    year: 1949,
-    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/1984.jpg",
-    url: "http://www.amazon.com/1984-Signet-Classics-George-Orwell/dp/0451524934/",
-  },
-  {
     title: "Mistakes Were Made",
     author: "Carol Tavris, Elliot Aronson",
     year: 1949,
     image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/MistakesWereMade.jpg",
     url: "http://www.amazon.com/Mistakes-Were-Made-But-Not/dp/0156033909",
+  },
+  {
+    title: "1984",
+    author: "George Orwell",
+    year: 1949,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/1984.jpg",
+    url: "http://www.amazon.com/1984-Signet-Classics-George-Orwell/dp/0451524934/",
   },
   {
     title: "Empire of the Summer Moon",
