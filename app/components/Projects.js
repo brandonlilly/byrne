@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Remarkable from 'remarkable';
-import hljs from 'highlight.js';
 import markdownToHTML from '../utils/markdown';
 
 const projects = [
