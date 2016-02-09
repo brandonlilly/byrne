@@ -5,7 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var extractSASS = new ExtractTextPlugin('styles.css');
 
 var config = {
-  devtool : 'eval-source-map',
+  // devtool : 'eval-source-map',
 
   entry: {
     bundle: ['./app/index.js', './style/main.scss'],
@@ -45,10 +45,15 @@ var config = {
     includePaths: [path.join(__dirname, "style")]
   },
   plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: '"development"' }
     }),
-    extractSASS
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: { warnings: false },
+      minimize: true,
+    }),
+    extractSASS,
   ]
 };
 
