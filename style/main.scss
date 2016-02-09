@@ -1,6 +1,9 @@
 @import 'reset';
 @import 'icons';
 @import 'reading';
+@import 'projects';
+@import 'markdown';
+@import 'syntax';
 
 $blue: #4B8298;
 $letter-spacing: 2px;
@@ -58,11 +61,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #media {
-  bottom: 10px;
+  bottom: 35px;
   font-size: 26px;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   margin-top: 30px;
   position: absolute;
   left: 50%;
@@ -138,6 +141,25 @@ nav {
   left: 0;
   z-index: 0;
 }
+
+
+.contentSection {
+  margin: 0 auto;
+  padding: 50px 0 80px 0;
+  max-width: 800px;
+  text-align: center;
+
+  section {
+    margin-bottom: 60px;
+  }
+
+  h2 {
+    display:block;
+    width: 100%;
+    margin: 15px 0 25px 0;
+  }
+}
+
 
 .clearfix:after {
   clear: both;

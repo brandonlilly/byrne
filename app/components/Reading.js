@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { current, recent, favorites, next } from '../utils/bookLists';
+import { current, recent, favorites, next } from '../data/bookLists';
 
 const BookCard = ({ url, title, image }) => {
   return (

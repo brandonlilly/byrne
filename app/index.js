@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Router, browserHistory, useRouterHistory, IndexRoute } from 'react-router';
 import { createHashHistory } from 'history'
-import { App, Home, NoMatch, Reading } from './components';
+import { App, Home, NoMatch, Projects, Reading } from './components';
 import { isProduction } from './utils';
 import { createLog } from './log';
 
@@ -17,6 +17,7 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="reading" component={Reading}/>
+      <Route path="projects" component={Projects}/>
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>

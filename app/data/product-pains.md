@@ -1,0 +1,1 @@
+Product Pains is a community to provide companies with feedback to improve their products. My contributions were fairly minor: I helped with the Facebook login, user menu, downvote modal and a few other odds and ends. They're just starting out but you should consider using it! Andrew and Sarah are awesome.
