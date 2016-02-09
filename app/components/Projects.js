@@ -34,7 +34,7 @@ class Projects extends Component {
       <section className="projects contentSection">
         <h2>Recent Projects</h2>
         {projects.map(project => (
-          <ProjectCard {...project} />
+          <ProjectCard {...project} key={project.name}/>
         ))}
       </section>
     );
