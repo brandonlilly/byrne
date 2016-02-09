@@ -17,7 +17,7 @@ const projects = [
   {
     name: 'Quilterly',
     url: 'javascript:void(0)',
-    html: markdownToHTML("Marketplace for Longarm quilting patterns (not yet public)."),
+    html: markdownToHTML("Marketplace for Longarm quilting patterns (not yet public). React/Redux/Rails stack."),
   },
   {
     name: 'Others',
