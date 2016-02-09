@@ -108,6 +108,13 @@ export const favorites = [
     image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/BraveNewWorld.jpg",
     url: "http://www.amazon.com/Brave-New-World-Aldous-Huxley/dp/0060850523/",
   },
+  {
+    title: "Conquerors' Pride",
+    author: "Timothy Zahn",
+    year: 1994,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/Conquerors%27_Pride.jpg",
+    url: "http://www.amazon.com/Conquerors-Pride-The-Saga-Book/dp/0553568922",
+  }
 ];
 
 export const next = [
@@ -138,5 +145,12 @@ export const next = [
     year: 2013,
     image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/QuantumComputingSinceDemocritus.jpg",
     url: "http://www.amazon.com/Quantum-Computing-since-Democritus-Aaronson/dp/0521199565",
+  },
+  {
+    title: "JavaScript: The Good Parts",
+    author: "Douglas Crockford",
+    year: 2008,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/JavaScriptTheGoodParts.jpg",
+    url: "http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742",
   },
 ];
