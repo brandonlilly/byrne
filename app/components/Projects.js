@@ -22,7 +22,7 @@ const projects = [
   {
     name: 'Others',
     url: 'https://github.com/brandonlilly',
-    html: markdownToHTML("Look at my [github](https://github.com/brandonlilly) to see recent public activity."),
+    html: markdownToHTML("Lately I've been dabbling in Redux, RxJS, and WebGL. I'm also interested in Elm. Check out my [github](https://github.com/brandonlilly) to see recent public activity."),
   }
 ];
 
