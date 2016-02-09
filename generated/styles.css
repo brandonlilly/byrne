@@ -778,6 +778,7 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: lighter;
   letter-spacing: 2px;
+  overflow-y: scroll;
   height: 100%;
   margin: 0;
   background-color: #2B2F3C; }
