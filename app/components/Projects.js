@@ -14,6 +14,16 @@ const projects = [
     url: 'http://productpains.com',
     html: markdownToHTML(require('raw!../data/product-pains.md'))
   },
+  {
+    name: 'Quilterly',
+    url: 'javascript:void(0)',
+    html: markdownToHTML("Marketplace for Longarm quilting patterns (not yet public)."),
+  },
+  {
+    name: 'Others',
+    url: 'https://github.com/brandonlilly',
+    html: markdownToHTML("Look at my [github](https://github.com/brandonlilly) to see recent public activity."),
+  }
 ];
 
 const ProjectCard = ({ name, children, html, url }) => {
