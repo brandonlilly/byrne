@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import markdownToHTML from '../utils/markdown';
+import React, { Component } from 'react'
+import markdownToHTML from '../utils/markdown'
 
 const projects = [
   {
@@ -22,7 +22,7 @@ const projects = [
     url: 'https://github.com/brandonlilly',
     html: markdownToHTML("Lately I've been dabbling in Redux, RxJS, and WebGL. I'm also interested in Elm. Check out my [github](https://github.com/brandonlilly) to see recent public activity."),
   }
-];
+]
 
 const ProjectCard = ({ name, children, html, url }) => {
   return (
@@ -33,7 +33,7 @@ const ProjectCard = ({ name, children, html, url }) => {
         dangerouslySetInnerHTML={{__html: html}} />
       {children}
     </article>
-  );
+  )
 }
 
 class Projects extends Component {
@@ -45,8 +45,8 @@ class Projects extends Component {
           <ProjectCard {...project} key={project.name}/>
         ))}
       </section>
-    );
+    )
   }
 }
 
-export default Projects;
+export default Projects

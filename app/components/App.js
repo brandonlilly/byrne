@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Nav, MediaIcons } from '../components';
+import React, { Component } from 'react'
+import { Nav, MediaIcons } from '../components'
 
 class App extends Component {
   render() {
@@ -9,8 +9,8 @@ class App extends Component {
         {this.props.children}
         <MediaIcons />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

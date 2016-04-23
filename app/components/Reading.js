@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { current, recent, favorites, next } from '../data/bookLists';
+import React, { Component } from 'react'
+import { current, recent, favorites, next } from '../data/bookLists'
 
 const BookCard = ({ url, title, image }) => {
   return (
@@ -9,8 +9,8 @@ const BookCard = ({ url, title, image }) => {
         <div className="panel"> </div>
       </a>
     </article>
-  );
-};
+  )
+}
 
 class Reading extends Component {
   render() {
@@ -44,8 +44,8 @@ class Reading extends Component {
         </section>
 
       </section>
-    );
+    )
   }
 }
 
-export default Reading;
+export default Reading

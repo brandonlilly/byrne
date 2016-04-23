@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React from 'react'
+import { Link } from 'react-router'
 
 const NavLink = ({ name, to }) => {
   return (
@@ -21,4 +21,4 @@ const Nav = () => {
   )
 }
 
-export default Nav;
+export default Nav

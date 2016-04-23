@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const MediaIcons = () => {
   return (
@@ -7,7 +7,7 @@ const MediaIcons = () => {
       <a href="mailto:brandonjlilly@gmail.com"><i data-icon="b"></i></a>
       <a href="https://www.linkedin.com/in/lillybrandon"><i data-icon="d"></i></a>
     </article>
-  );
+  )
 }
 
-export default MediaIcons;
+export default MediaIcons
