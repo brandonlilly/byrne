@@ -167,4 +167,11 @@ export const next = [
     image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/jpg-medlo/JavaScriptTheGoodParts.jpg",
     url: "http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742",
   },
+  {
+    title: "The Age of Em",
+    author: "Robin Hanson",
+    year: 2016,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/jpg-medlo/TheAgeOfEm.jpg",
+    url: "http://www.amazon.com/Age-Em-Work-Robots-Earth/dp/0198754620",
+  },
 ]
