@@ -174,4 +174,11 @@ export const next = [
     image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/jpg-medlo/TheAgeOfEm.jpg",
     url: "http://www.amazon.com/Age-Em-Work-Robots-Earth/dp/0198754620",
   },
+  {
+    title: "The Brothers Karamazov",
+    author: "Fyodor Dostoyevsky",
+    year: 1880,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/jpg-medlo/TheBrothersKaramazov.jpg",
+    url: "http://www.amazon.com/Brothers-Karamazov-Fyodor-Dostoevsky/dp/0374528373",
+  },
 ]
