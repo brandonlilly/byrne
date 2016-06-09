@@ -15,6 +15,20 @@ export const recent = [
     url: "http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555",
   },
   {
+    title: "The Selfish Gene",
+    author: "Richard Dawkins",
+    year: 1976,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/jpg-medlo/TheSelfishGene2.jpg",
+    url: "http://www.amazon.com/Selfish-Gene-Anniversary-Landmark-Science/dp/0198788606",
+  },
+  {
+    title: "Under the Skin",
+    author: "Michael Faber",
+    year: 2001,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/jpg-medlo/UnderTheSkin.jpg",
+    url: "https://www.amazon.com/Under-Skin-Michel-Faber-ebook/dp/B004M5HKHKn",
+  },
+  {
     title: "1984",
     author: "George Orwell",
     year: 1949,
@@ -140,11 +154,11 @@ export const next = [
     url: "http://www.amazon.com/The-Master-Margarita-Mikhail-Bulgakov/dp/0679760806",
   },
   {
-    title: "Mistakes Were Made",
-    author: "Carol Tavris, Elliot Aronson",
-    year: 1949,
-    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/jpg-medlo/MistakesWereMade.jpg",
-    url: "http://www.amazon.com/Mistakes-Were-Made-But-Not/dp/0156033909",
+    title: "Beauty and Sadness",
+    author: "Yasunari Kawabata, Howard S. Hibbett",
+    year: 1996,
+    image: "https://s3-us-west-1.amazonaws.com/byrne-portfolio/books/jpg-medlo/BeautyAndSadness.jpg",
+    url: "http://www.amazon.com/Beauty-Sadness-Yasunari-Kawabata/dp/0679761055"
   },
   {
     title: "Empire of the Summer Moon",
